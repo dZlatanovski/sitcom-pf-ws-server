@@ -1,0 +1,15 @@
+{
+  "name": "pf-ws",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "degen_sitcom",
+  "license": "ISC",
+  "description": "Pump fun chat bot",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "pump-chat-client": "^1.0.1"
+  }
+}
