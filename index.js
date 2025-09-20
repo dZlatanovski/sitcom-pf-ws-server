@@ -34,9 +34,7 @@ async function writeLastMsgId(lastSeen) {
 // Parse messages
 function parseUsername(username) {
 	if (username.length >= 32) {
-		if (username.length === username.replace(/[^a-zA-Z0-9]/g, "").length) {
-			return username.substring(-6);
-		}
+		return username.slice(-6);
 	}
 	return username;
 }
