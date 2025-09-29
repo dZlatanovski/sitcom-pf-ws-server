@@ -40,7 +40,10 @@ function parseUsername(username) {
 }
 async function parseTopic(msg) {
 	console.info(`Parsing: ${msg.username} - ${msg.message}`);
-	if (msg.message.toLowerCase().startsWith("/addtopic ")) {
+	if (
+		msg.message.toLowerCase().startsWith("/addtopic ") ||
+		msg.message.toLowerCase().startsWith("!addtopic ")
+	) {
 		await addTopic({
 			user: {
 				id: msg.userAddress,
